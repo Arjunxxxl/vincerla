@@ -1,0 +1,71 @@
+<br>
+
+
+{{#if user}}
+<ul class="nav nav-pills nav-justified justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link " href="/users/home?friends_id={{user.dotaid}}">Home</a>
+    </li>
+  <li class="nav-item">
+      <a class="nav-link" href="/users/winners?friends_id={{user.dotaid}}">Winners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/screen?friends_id={{user.dotaid}}">Rampage Compitetion</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link active" href="/users/donate">Donate us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello {{user.name}}</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/users/logout">Logout</a>
+        </div>
+    </li>
+</ul>
+{{else}}
+<ul class="nav nav-pills nav-justified justify-content-center">
+  	<li class="nav-item">
+    	<a class="nav-link " href="/">Home</a>
+  	</li>
+ 	<li class="nav-item">
+    	<a class="nav-link" href="/users/winners">Winners</a>
+  	</li>
+  	<li class="nav-item">
+    	<a class="nav-link" href="/users/screen">Rampage Compitetion</a>
+  	</li>
+    <li class="nav-item">
+      <a class="nav-link active" href="/users/donate">Donate us</a>
+    </li>
+  	<li class="nav-item dropdown">
+    	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello,Click here</a>
+    		<div class="dropdown-menu">
+      			<a class="dropdown-item" href="/users/login">Login</a>
+     			 <div class="dropdown-divider"></div>
+     			 <div class="dropdown-divider"></div>
+      			<a class="dropdown-item" href="/users/signup">Register</a>
+    		</div>
+  	</li>
+</ul>
+{{/if}}
+ <div class="dropdown-divider" style="background-color: #000000;"></div>
+<br>
+
+<div class="major_giv"><h3>Donate us</h3></div>
+<br>
+<div class="donatepara"><p>Your donations are very important to us. These donation help us to organize giveaways and competetions and to maintain this website.</p></div>
+<div class="donpara"><p>Donate us so that we can organize more giveaways and competetions</p></div>
+
+<br><hr>
+
+<div class="choose"><h4 class="choose">Paypal</h4></div>
+<div class="choose">
+  	<div><h5 class="paypal"><span class="paypal">PayPal.Me/Arjun983</span></h5></div>
+</div>
+<br><hr>
+
+<div class="choose"><h4 class="choose">Paytm Coming Soon</h4></div>
+<br>
+<div class="choose">
+  <!--<div><h5>(+91)7728999684</h5></div>-->
+  <div><p  class="text-muted"> Use above phone number to paytm us.</p></div>
+</div>

@@ -1,0 +1,72 @@
+
+
+<br>
+
+<ul class="nav nav-pills nav-justified justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link " href="/">Home</a>
+    </li>
+  <li class="nav-item">
+      <a class="nav-link" href="/users/winners">Winners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/screen">Rampage Compitetion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/donate">Donate us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello,Click here</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/users/login">Login</a>
+           <div class="dropdown-divider"></div>
+           <div class="dropdown-divider"></div>
+            <a class="dropdown-item active" href="/users/signup">Register</a>
+        </div>
+    </li>
+</ul>
+ <div class="dropdown-divider" style="background-color: #000000;"></div>
+<br>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<div class="major_giv"><h3>Sign up</h3></div>
+<br>
+
+
+<form method="post" action="/users/signup" class="signup container">
+   <div class="form-group row">
+    <label class="col-sm-2 lab col-form-label">Name</label>
+    <input type="text" class="form-control col-sm-10" placeholder="Name" name="name">
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 lab col-form-label">Mobile Number</label>
+    <input type="tel" class="form-control col-sm-10" placeholder="Mobile Number" name="mobile">
+  </div>
+   <div class="form-group row">
+    <label class="col-sm-2 lab col-form-label">Email</label>
+    <input type="email" class="form-control col-sm-10" placeholder="Email" name="email">
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 lab col-form-label">Steam Trade Url  <span class="stu">find here</span></label>
+    <input type="text" class="form-control col-sm-10" placeholder="Steam Trade Url" name="url">
+  </div>
+    
+  <div class="form-group row">
+      <label for="disabledTextInput" class="col-sm-2 lab col-form-label">Dota 2 friends id</label>
+      <input type="number" id="disabledTextInput" class="form-control col-sm-10" name="friends" placeholder="Dota 2 friends id">
+    </div>
+
+  <div class="form-group row">
+    <label class="col-sm-2 lab col-form-label">Password</label>
+    <input type="password" class="form-control col-sm-10" placeholder="Password" name="password">
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 lab col-form-label">Confirm Password</label>
+    <input type="password" class="form-control col-sm-10" placeholder="Password" name="password2">
+  </div>
+  <center></center><p class="in"><i> If you won, we will contact you at above email address</i></p></center>
+  <center><button type="submit" class="btn reg_maj btn-primary">Sign up</button></center>
+</form>

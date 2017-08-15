@@ -1,0 +1,109 @@
+<br>
+{{#if user}}
+<ul class="nav nav-pills nav-justified justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link " href="/users/home?friends_id={{user.dotaid}}">Home</a>
+    </li>
+  <li class="nav-item">
+      <a class="nav-link" href="/users/winners?friends_id={{user.dotaid}}">Winners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/screen?friends_id={{user.dotaid}}">Rampage Compitetion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/donate">Donate us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello {{user.name}}</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/users/logout">Logout</a>
+        </div>
+    </li>
+</ul>
+{{else}}
+<ul class="nav nav-pills nav-justified justify-content-center">
+  	<li class="nav-item">
+    	<a class="nav-link " href="/">Home</a>
+  	</li>
+ 	<li class="nav-item">
+    	<a class="nav-link" href="/users/winners">Winners</a>
+  	</li>
+  	<li class="nav-item">
+    	<a class="nav-link" href="/users/screen">Rampage Compitetion</a>
+  	</li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/donate">Donate us</a>
+    </li>
+  	<li class="nav-item dropdown">
+    	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello,Click here</a>
+    		<div class="dropdown-menu">
+      			<a class="dropdown-item" href="/users/login">Login</a>
+     			 <div class="dropdown-divider"></div>
+     			 <div class="dropdown-divider"></div>
+      			<a class="dropdown-item" href="/users/signup">Register</a>
+    		</div>
+  	</li>
+</ul>
+{{/if}}
+ <div class="dropdown-divider" style="background-color: #000000;"></div>
+<br>
+<div class="pickhead"><h3>Picking The Winner</h3></div>
+<br>
+
+<div class="pick_giv">
+  <div class="giv"><h5>Picking giveaway winners</h5></div>
+  <div class="givpara">
+        <p>Winners of each giveaway are picked randomly. We are using <a href="https://www.random.org/">https://www.random.org/</a>  to pick random winner.
+        <br>The number of winners, for a particular giveaway, is already mentioned against giveaway. However, if number of registration for a particular giveaway exceeds 450, then number of winners will be increased to 25.
+        </p>
+        <h6><strong>PS: If you won any giveaway then we will contact you at your email adderss. And you will have 48hr to respond otherwise prize will be passed to next person.</strong></h6>
+  </div>
+</div>
+<br>
+<hr>
+<div class="pick_ramp">
+  <div class="ramp"><h5>Picking rampage competetion winners</h5></div>
+  <div class="ramppara">
+        <p>Rules to decide winner:-</p>
+        <table class="table table-striped  table-hover" >
+          <tr>
+            <td></td>
+            <td><b>Points</b></td>
+          </tr>
+          <tr>
+            <td>Time 0-15min</td>
+            <td>25 pts</td>
+          </tr>
+          <tr>
+            <td>Time 16-30min</td>
+            <td>20 pts</td>
+          </tr>
+          <tr>
+            <td>Time 31-45min</td>
+            <td>15 pts</td>
+          </tr>
+          <tr>
+            <td>Time>45</td>
+            <td>10 pts</td>
+          </tr>
+          <tr>
+            <td>Networth<span class="text-danger">*</span></td>
+            <td>networth/1000 pts</td>
+          </tr>
+          <tr>
+            <td>Last hits<span class="text-danger">*</span></td>
+            <td>lh/100 pts</td>
+          </tr>
+          <tr>
+            <td>Deny<span class="text-danger">*</span></td>
+            <td>deny*.75 pts</td>
+          </tr>
+          <tr>
+            <td>Core support rampage</td>
+            <td>15 pts</td>
+          </tr>
+        </table>
+        <p class="text-danger">* value at the time rampage is taken</p>
+        <h6>PS: If you won then we will contact you at your email adderss. And you will have 48hr to respond otherwise prize will be passed to next person.</h6>
+  </div>
+</div>

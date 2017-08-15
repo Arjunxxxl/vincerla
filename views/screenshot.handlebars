@@ -1,0 +1,95 @@
+<br>
+{{#if user}}
+<ul class="nav nav-pills nav-justified justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="/users/home?friends_id={{user.dotaid}}">Home</a>
+    </li>
+  <li class="nav-item">
+      <a class="nav-link" href="/users/winners?friends_id={{user.dotaid}}">Winners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="/users/screen?friends_id={{user.dotaid}}">Rampage Compitetion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/donate">Donate us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello {{user.name}}</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/users/logout">Logout</a>
+        </div>
+    </li>
+</ul>
+{{else}}
+<ul class="nav nav-pills nav-justified justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+  <li class="nav-item">
+      <a class="nav-link" href="/users/winners">Winners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="/users/screen">Rampage Compitetion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/donate">Donate us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello,Click here</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/users/login">Login</a>
+           <div class="dropdown-divider"></div>
+           <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/users/signup">Register</a>
+        </div>
+    </li>
+</ul>
+{{/if}}
+ <div class="dropdown-divider" style="background-color: #000000;"></div>
+<br>
+
+<div class="ramphead"><h3>Rampage Compitetion</h3></div>
+<br>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid scr_major container" src="../assets/ramp1.png" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+              <h2 class="item_name"><b><i> Severing Lash(x10)</i></b></h2>
+        </div>  
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid scr_major container" src="../assets/ramp2.png" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+              <h2 class="item_name"><b><i> Severing Lash(x10)</i></b></h2>
+        </div>  
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="background-color: #000000;">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="background-color: #000000;">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+
+<div class="rule"><h6 class="luck">Top 10 Rampages will feature on our youtube channel.Click here to read <a href="/users/pick">Rules</a></h6></div>
+<div class="many"><p  class="text-primary">Last date - 10-Aug-2017</p></div>
+<div class="justify-content-center container scr_m">
+  <form method="post" action="/users/sc">
+        <input type="number" name="up" placeholder="Dota 2 match id">
+        <button type="submit" class="btn reg_maj btn-primary">Submit</button>
+        <p><div class="hide"><input type="text" name="di" value={{user.dotaid}}></div></p>
+  </form>
+</div>
+
+<br><br><br>
+
+<div class="you justify-content-center"><button type="button" class="btn reg_maj btn-danger">Subscribe to our youtube channel</button></div>

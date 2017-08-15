@@ -1,0 +1,98 @@
+
+
+<br>
+{{#if user}}
+
+<ul class="nav nav-pills nav-justified justify-content-center">
+    <li class="nav-item">
+    
+      <a class="nav-link " href="/users/home?friends_id={{user.dotaid}}">Home</a>
+    </li>
+  <li class="nav-item">
+      <a class="nav-link" href="/users/winners?friends_id={{user.dotaid}}">Winners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/screen?friends_id={{user.dotaid}}">Rampage Compitetion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/donate">Donate us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello {{user.name}}</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/users/logout">Logout</a>
+    </li>
+</ul>
+{{else}}
+
+<ul class="nav nav-pills nav-justified justify-content-center">
+  	<li class="nav-item">
+    
+    	<a class="nav-link " href="/">Home</a>
+  	</li>
+ 	<li class="nav-item">
+    	<a class="nav-link" href="/users/winners">Winners</a>
+  	</li>
+  	<li class="nav-item">
+    	<a class="nav-link" href="/users/screen">Rampage Compitetion</a>
+  	</li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/donate">Donate us</a>
+    </li>
+  	<li class="nav-item dropdown">
+    	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello,Click here</a>
+    		<div class="dropdown-menu">
+      			<a class="dropdown-item" href="/users/login">Login</a>
+     			 <div class="dropdown-divider"></div>
+     			 <div class="dropdown-divider"></div>
+      			<a class="dropdown-item" href="/users/signup">Register</a>
+    		</div>
+  	</li>
+</ul>
+{{/if}}
+ <div class="dropdown-divider" style="background-color: #000000;"></div>
+<br>
+<div class="Contacthead"><h3>Contact us</h3></div>
+<br>
+
+<div class="con justify-content-center">
+<div class="row container" >
+  <div class="col-sm-6">
+    <div class="card text-center trans">
+      <div class="card-block">
+        <h4 class="card-title">E-mail us</h4>
+        <p class="card-text">a.asankhala</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card text-center trans">
+      <div class="card-block">
+        <h4 class="card-title">Call us</h4>
+        <p class="card-text">(+91)7728999684</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--<p><div class="hide"><input type="text" name="di" value={{user.dotaid}}><input type="text" name="em" value={{user.email}}></div></p>-->
+
+<br>
+
+<div>
+<div class="Reach"><h4 class="Reach"><b>Reach us</b></h4><!--google maps api-->
+<div class="map justify-content-center">
+  <iframe src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDLMEjJt_LWH6JhVEc9id_LfEtgZOFeCoE&center=26.908515, 75.799403
+  &zoom=18
+  &maptype=satellite"
+    height="300" width="400"
+    frameborder="5" scrolling="yes" ></iframe>
+</div>
+<p><h5 class="Reach">F183, Panchil Marg, C-Scheme Jaipur, Rajasthan(India)</h5></p>
+</div></div>
+
+<br>
+
+<div class="many">
+<a href="/users/submit" class="btn reg_maj btn-info">Submit A Query</a>
+</div>

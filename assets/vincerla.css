@@ -1,0 +1,371 @@
+body{
+		background: #135058; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(#135058,,  #F1F2B5); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#135058,,  #F1F2B5); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#135058,,  #F1F2B5); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#135058, #F1F2B5); /* Standard syntax */
+
+		font-family: 'Artifika', serif;
+		font-family: 'Indie Flower', cursive;
+		font-family: 'Lobster', cursive;
+		font-family: 'Pacifico', cursive;
+		font-family: 'Gloria Hallelujah', cursive;
+		font-family: 'Bad Script', cursive;
+		font-family: 'Playball', cursive;
+		font-family: 'Patrick Hand', cursive;
+		font-family: 'Gentium Book Basic', serif;
+		font-family: 'Aldrich', sans-serif;
+		font-family: 'Frijole', cursive;
+		font-family: 'Cabin Sketch', cursive;
+		font-family: 'Milonga', cursive;
+		font-family: 'Bungee Shade', cursive;
+		font-family: 'Monofett', cursive;
+		font-family: 'Bree Serif', serif;
+		font-family: 'Crete Round', serif;
+}
+
+
+div.heading{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-style: italic;
+	text-align: center;
+	color: #D9D9D9;
+}
+
+a.heading{
+	color: #D9D9D9;
+}
+
+a.heading:hover{
+	text-decoration: none;
+	color: #D9D9D9;
+}
+
+
+div.tag{
+	font-family: 'Bad Script', cursive;
+	text-align: center;
+	color: #A6E1FA;
+}
+
+div.major_giv{
+	text-align: center;
+	font-family: 'Frijole', cursive;
+	color: #56E39F;
+}
+div.major_givlol{
+	text-align: center;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+i.major_givlol:hover{
+	cursor: pointer;
+	font-weight: bold;
+}
+
+img.major{
+	/*max-width: 100%;
+	max-height: auto;*/
+	max-width: 80%;
+	max-height: 500px;
+}
+
+h2.item_name{
+font-family: 'Gentium Book Basic', serif;
+}
+
+div.m{
+	display: flex;
+  align-items: center;
+}
+
+div.bot{
+	text-align: center;
+	color: #59C9A5;
+	font-family: 'Frijole', cursive;
+}
+
+div.other_giv{
+	text-align: center;
+	font-family: 'Frijole', cursive;
+	color: #56E39F;
+}
+
+div.ot_giv{
+	width: 100%;
+}
+
+img.ot{
+	max-height:220px;
+}
+
+button.reg_maj{
+	font-family: 'Aldrich', sans-serif;
+}
+
+button.reg_maj:hover{
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 3px 3px 3px 1px #777777;
+}
+
+div.foot{
+	background-color: #172121;
+}
+
+div.foot_t{
+	background-color: #172121;
+}
+
+div.icon{
+	text-align: center;
+}
+
+div.col{width: 100%;}
+
+div.f{	
+	
+	justify-content: center;
+	display: flex;
+}
+
+h3.other_giv{
+	font-family: 'Pacifico', cursive;
+}
+
+th.h{
+	text-align: center;
+	color: #8BAAAD;
+}
+
+td.h{
+	text-align: center;
+	color: #B3B3B3;
+}
+
+td.stu:hover{
+	color:#0000FF;
+	text-decoration: underline;
+}
+
+span.v{
+	color: #B2B2B2;
+}
+
+a.h{
+	color: #B3B3B3;
+}
+
+td.h:hover{
+	cursor: pointer;
+}
+
+span.secret{
+	font-family: 'Monofett', cursive;
+	color: #8D86C9;
+}
+
+div.many{
+	text-align: center;
+}
+
+h6.luck{
+	font-family: 'Lobster', cursive;
+}
+
+h3.kunk{
+	font-family: 'Lobster', cursive;
+}
+
+/*Usage as a mixin*/
+.skip-navigation {
+  @include sr-only;
+  @include sr-only-focusable;
+}
+
+/*winner css*/
+div.win_major{
+	width: 100%;
+}
+
+div.winnerhead{
+	text-align: center;
+	font-family: 'Frijole', cursive;
+	color: #745C97;
+}
+
+img.scr_major{
+	max-width: 80%;
+	max-height: 500px;
+}
+
+div.rule{
+	text-align: center;
+}
+
+div.scr_m{
+	
+	display: flex;
+  align-items: center;
+}
+
+div.hide{
+		display: none;
+		visibility: hidden;
+}
+
+/*contact*/
+div.Contacthead{
+	text-align: center;
+	font-family: 'Frijole', cursive;
+	color: #60463B;
+}
+
+div.trans{
+	/*background:rgba(0,0,0,0);*/
+	background-image: url('star.jpg');
+	color: #EAEAEA;
+	font-family: 'Bree Serif', serif;
+}
+
+div.con{
+	display: flex;
+  align-items: center;
+}
+
+div.map{
+	display: flex;
+  align-items: center;
+}
+
+h4.Reach{
+	font-family: 'Bungee Shade', cursive;
+}
+
+div.Reach{
+	text-align: center;
+}
+
+h5.Reach{
+	font-family: 'Bree Serif', serif;
+}
+
+a.reg_maj{
+	font-family: 'Aldrich', sans-serif;
+}
+
+a.reg_maj:hover{
+	cursor: pointer;
+	font-weight: bold;
+	box-shadow: 3px 3px 3px 1px #777777;
+}
+
+/*login*/
+div.loginhead{
+	text-align: center;
+	font-family: 'Frijole', cursive;
+	color: #4F5165;
+}
+
+label.lab{
+	font-family: 'Bree Serif', serif;
+}
+
+/*signup*/
+
+form.signup{
+	width: 100%;
+}
+
+div.you{
+		display: flex;
+  align-items: center;
+}
+
+p.in{
+	font-family: 'Artifika', serif;
+}
+
+/*pick*/
+div.pickhead{
+	text-align: center;
+	font-family: 'Frijole', cursive;
+	color: #8EA8C3;
+}
+
+div.giv,div.ramp{
+	text-align: center;
+	font-family: 'Crete Round', serif;
+	font-weight: bold;
+}
+div.givpara{
+	text-align: center;
+	font-family: 'Patrick Hand', cursive;
+}
+div.ramppara{
+	text-align: center;
+	font-family: 'Patrick Hand', cursive;
+}
+
+
+
+span.stu{
+	font-size: 0.7em;
+	color: #0A3FEF;
+}
+span.stu:hover{
+	cursor: pointer;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/*rampage*/
+div.ramphead{
+	text-align: center;
+	font-family: 'Frijole', cursive;
+	color: #C4BBB8;
+}
+
+/*donate*/
+div.donatepara,div.donpara{
+	text-align: center;
+	font-family: 'Milonga', cursive;
+	font-weight: bold;
+}
+div.choose{
+	text-align: center;
+	
+}
+
+h4.choose{
+	text-align: center;
+	font-family: 'Bungee Shade', cursive;
+	font-weight: bold;
+}
+
+/*submit*/
+div.submithead{
+	text-align: center;
+	font-family: 'Frijole', cursive;
+	color: #FF6B6B;
+}
+
+/*paypal*/
+span.paypal:hover{
+	cursor: pointer;
+	font-weight: bold;
+}
+h5.paypal{
+	color: #1426CD;
+}
+
+.Instagram{
+	  pointer-events: none;
+   cursor: default;
+   color: #202020;
+}
+
+.Instagram:hover{
+	  pointer-events: none;
+   cursor: default;
+}

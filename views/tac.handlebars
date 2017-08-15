@@ -1,0 +1,59 @@
+<br>
+
+
+{{#if user}}
+<ul class="nav nav-pills nav-justified justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link " href="/users/home?friends_id={{user.dotaid}}">Home</a>
+    </li>
+  <li class="nav-item">
+      <a class="nav-link" href="/users/winners?friends_id={{user.dotaid}}">Winners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/screen?friends_id={{user.dotaid}}">Rampage Compitetion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/donate">Donate us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello {{user.name}}</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/users/logout">Logout</a>
+        </div>
+    </li>
+</ul>
+{{else}}
+<ul class="nav nav-pills nav-justified justify-content-center">
+  	<li class="nav-item">
+    	<a class="nav-link " href="/">Home</a>
+  	</li>
+ 	<li class="nav-item">
+    	<a class="nav-link" href="/users/winners">Winners</a>
+  	</li>
+  	<li class="nav-item">
+    	<a class="nav-link" href="/users/screen">Rampage Compitetion</a>
+  	</li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/donate">Donate us</a>
+    </li>
+  	<li class="nav-item dropdown">
+    	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello,Click here</a>
+    		<div class="dropdown-menu">
+      			<a class="dropdown-item" href="/users/login">Login</a>
+     			 <div class="dropdown-divider"></div>
+     			 <div class="dropdown-divider"></div>
+      			<a class="dropdown-item" href="/users/signup">Register</a>
+    		</div>
+  	</li>
+</ul>
+{{/if}}
+ <div class="dropdown-divider" style="background-color: #000000;"></div>
+<br>
+
+<div class="major_giv"><h3>Terms And  Conditions Are Currently Unavailable</h3></div>
+
+<div class="major_giv"><h3>Internal server error</h3></div>
+
+<div class="major_giv"><h3>Internal server error</h3></div>
+<br>
+<p><div class="hide"><input type="text" name="di" value={{user.dotaid}}><input type="text" name="em" value={{user.email}}></div></p>

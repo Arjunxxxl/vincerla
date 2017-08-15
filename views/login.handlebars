@@ -1,0 +1,42 @@
+<br>
+
+<ul class="nav nav-pills nav-justified justify-content-center">
+  	<li class="nav-item">
+    	<a class="nav-link " href="/">Home</a>
+  	</li>
+ 	<li class="nav-item">
+    	<a class="nav-link" href="/users/winners">Winners</a>
+  	</li>
+  	<li class="nav-item">
+    	<a class="nav-link" href="/users/screen">Rampage Compitetion</a>
+  	</li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/donate">Donate us</a>
+    </li>
+  	<li class="nav-item dropdown">
+    	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello,Click here</a>
+    		<div class="dropdown-menu">
+      			<a class="dropdown-item active" href="/users/login">Login</a>
+     			 <div class="dropdown-divider"></div>
+     			 <div class="dropdown-divider"></div>
+      			<a class="dropdown-item" href="/users/signup">Register</a>
+    		</div>
+  	</li>
+</ul>
+ <div class="dropdown-divider" style="background-color: #000000;"></div>
+<br>
+<div class="loginhead"><h3>Account Login</h3></div>
+<br>
+
+
+<form method="post" action="/users/login" class="login container">
+   <div class="form-group row">
+    <label class="col-sm-2 lab col-form-label">Dota 2 friends id</label>
+    <input type="number" class="form-control col-sm-10" placeholder="Dota 2 friends id" name="username">
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 lab col-form-label">Password</label>
+    <input type="password" class="form-control col-sm-10" placeholder="Password" name="password">
+  </div>
+  <center><button type="submit" class="btn reg_maj btn-primary">Login</button></center>
+</form>
